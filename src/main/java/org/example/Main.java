@@ -33,7 +33,6 @@ public class Main {
         boolean calculoRealizado = false;
 
         do {
-
             System.out.println();
             System.out.println("Aquí tienes las opciones del menú:");
             System.out.println("1. Introducir los gastos de viaje.");
@@ -48,7 +47,6 @@ public class Main {
             switch (opcion) {
 
                 case 1: {
-
                     if (datosIntroducidos == true){
                         System.out.println("Los gastos ya han sido introducidos, no se pueden volver a introducir.");
                         break;
@@ -74,8 +72,6 @@ public class Main {
 
                     System.out.print("¿Cuánto ha gastado el viajero 5? ");
                     viajero5 = s.nextInt();
-
-                    // Contamos solamente los viajeros existentes.
 
                     if (viajero1 >= 0) {
                         contadorViajeros++;
@@ -182,7 +178,7 @@ public class Main {
                         if (viajero1 < 0) {
                             System.out.println("Viajero 1: No participa.");
                         } else {
-                            System.out.println("Gasto realizado por el viajero 1: " + viajero1);
+                            System.out.println("VIAJERO 1 - Gasto realizado: " + viajero1);
                             System.out.printf("Le correspondía pagar: %.2f%n", (viajero1 - saldo1));
 
                             if (saldo1 > 0) {
@@ -199,7 +195,7 @@ public class Main {
                         if (viajero2 < 0) {
                             System.out.println("Viajero 2: No participa.");
                         } else {
-                            System.out.println("Gasto realizado por el viajero 2: " + viajero2);
+                            System.out.println("VIAJERO 2 - Gasto realizado: " + viajero2);
                             System.out.printf("Le correspondía pagar: %.2f%n", (viajero2 - saldo2));
 
                             if (saldo2 > 0) {
@@ -216,7 +212,7 @@ public class Main {
                         if (viajero3 < 0) {
                             System.out.println("Viajero 3: No participa.");
                         } else {
-                            System.out.println("Gasto realizado por el viajero 3: " + viajero3);
+                            System.out.println("VIAJERO 3 - Gasto realizado: " + viajero3);
                             System.out.printf("Le correspondía pagar: %.2f%n", (viajero3 - saldo3));
 
                             if (saldo3 > 0) {
@@ -233,7 +229,7 @@ public class Main {
                         if (viajero4 < 0) {
                             System.out.println("Viajero 4: No participa.");
                         } else {
-                            System.out.println("Gasto realizado por el viajero 4: " + viajero4);
+                            System.out.println("VIAJERO 4 - Gasto realizado: " + viajero4);
                             System.out.printf("Le correspondía pagar: %.2f%n", (viajero4 - saldo4));
 
                             if (saldo4 > 0) {
@@ -250,7 +246,7 @@ public class Main {
                         if (viajero5 < 0) {
                             System.out.println("Viajero 5: No participa.");
                         } else {
-                            System.out.println("Gasto realizado por el viajero 5: " + viajero5);
+                            System.out.println("VIAJERO 5 - Gasto realizado: " + viajero5);
                             System.out.printf("Le correspondía pagar: %.2f%n", (viajero5 - saldo5));
 
                             if (saldo5 > 0) {
